@@ -43,7 +43,7 @@ export default function AboutStory() {
   ];
 
   return (
-    <section id="story" className="relative py-14 md:py-16 bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 overflow-hidden">
+    <section id="story" className="relative py-12 md:py-16 max-h-[90vh] bg-gradient-to-br from-green-50 via-emerald-50 to-green-50 overflow-hidden flex items-center">
       {/* Background blobs */}
       <div className="absolute inset-0 pointer-events-none select-none">
         <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500 opacity-10 rounded-full blur-3xl animate-pulse"></div>
@@ -52,15 +52,15 @@ export default function AboutStory() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-3">
             Our <span className="bg-gradient-to-r from-orange-600 to-purple-600 bg-clip-text text-transparent">Journey</span>
           </h2>
           <p className="text-sm md:text-base text-slate-600">From startup to trusted partner for 50+ SMEs</p>
         </div>
 
         {/* TIMELINE CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {milestones.map((milestone, idx) => {
             const Icon = milestone.icon;
 
@@ -71,7 +71,7 @@ export default function AboutStory() {
                 style={{ animationDelay: milestone.delay }}
               >
                 {/* Card */}
-                <div className="relative bg-white rounded-2xl p-6 border-2 border-slate-200 shadow-lg hover:border-purple-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                <div className="relative bg-white rounded-2xl p-5 border-2 border-slate-200 shadow-lg hover:border-purple-300 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                   {/* Year badge */}
                   <div className={`absolute -top-4 left-6 px-4 py-1.5 rounded-full bg-gradient-to-r ${milestone.gradient} text-white text-xs font-bold shadow-lg`}>
                     {milestone.year}

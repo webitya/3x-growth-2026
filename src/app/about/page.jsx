@@ -1,30 +1,22 @@
-import AboutHero from "@/components/about/AboutHero"
-import AboutStory from "@/components/about/AboutStory"
-import AboutBeliefs from "@/components/about/AboutBeliefs"
-import AboutWhoWeHelp from "@/components/about/AboutWhoWeHelp"
-import AboutFounder from "@/components/about/AboutFounder"
-import AboutCommitment from "@/components/about/AboutCommitment"
+import AboutHero from "@/components/about/AboutHero";
+import AboutStory from "@/components/about/AboutStory";
+import AboutTeam from "@/components/about/AboutTeam";
+import AboutStats from "@/components/about/AboutStats";
+import AboutValues from "@/components/about/AboutValues";
 
 export const metadata = {
-  title: "About 3x Growth | Sales Consulting Leadership",
-  description:
-    "Learn about Sandeep Gupta and how 3x Growth has been helping SMEs build predictable sales systems for 8+ years.",
-  keywords: "about us, sales consultant, Sandeep Gupta, sales leadership, SME consulting",
-  openGraph: {
-    title: "About 3x Growth Consulting",
-    description: "Real sales expertise from someone who has been in the trenches.",
-  },
-}
+  title: "About Us - 3x Growth | Transforming SME Sales Since 2016",
+  description: "Meet the team behind 3x Growth. We've helped 50+ SME founders achieve 220% average revenue growth through proven sales systems.",
+};
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <>
+    <main className="min-h-screen bg-white">
       <AboutHero />
       <AboutStory />
-      <AboutBeliefs />
-      <AboutWhoWeHelp />
-      <AboutFounder />
-      <AboutCommitment />
-    </>
-  )
+      <AboutTeam />
+      <AboutStats />
+      <AboutValues />
+    </main>
+  );
 }

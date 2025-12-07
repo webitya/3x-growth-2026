@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle2, AlertCircle, Loader2, User, Mail, Phone, MessageSquare, Building2, Sparkles } from "lucide-react";
+import { Send, CheckCircle2, AlertCircle, Loader2, User, Mail, Phone, MessageSquare, Building2, Sparkles, Award } from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -60,24 +60,22 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="relative py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
-      {/* Techy background effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 blur-[120px] rounded-full animate-blob"></div>
-        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-indigo-500/5 blur-[120px] rounded-full animate-blob animation-delay-1000"></div>
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
+    <section className="relative py-12 bg-gradient-to-b from-blue-50/20 to-white overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl animate-blob animation-delay-1000"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
 
-          {/* Left: Why Contact Us (2 columns) */}
+          {/* Left: Why Contact Us */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 border border-blue-200">
-                <Sparkles className="w-3 h-3 text-blue-600" />
-                <span className="text-xs font-bold text-blue-700">Why Choose Us</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50/80 backdrop-blur-sm border border-blue-200/50">
+                <Award className="w-3.5 h-3.5 text-blue-600" />
+                <span className="text-xs font-bold text-blue-700">WHY CHOOSE US</span>
               </div>
 
               <h2 className="text-2xl md:text-3xl font-black text-slate-900">
@@ -110,13 +108,10 @@ export default function ContactForm() {
               ].map((benefit, idx) => (
                 <div
                   key={idx}
-                  className="group relative flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300"
+                  className="group relative flex items-start gap-3 p-4 rounded-xl bg-white/80 backdrop-blur-sm border border-blue-200/40 hover:border-blue-300/60 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300"
                 >
-                  {/* Glow on hover */}
-                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500/0 to-cyan-500/0 group-hover:from-blue-500/5 group-hover:to-cyan-500/5 transition-all -z-10"></div>
-
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <CheckCircle2 className="w-4 h-4 text-white" />
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-slate-900">{benefit.title}</h3>
@@ -125,24 +120,15 @@ export default function ContactForm() {
                 </div>
               ))}
             </div>
-
-            {/* Quick CTA */}
-         
           </div>
 
-          {/* Right: Premium Contact Form (3 columns) */}
+          {/* Right: Contact Form */}
           <div className="lg:col-span-3">
-            <div className="relative bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow duration-500">
-              {/* Corner decorations */}
-              <div className="absolute top-0 right-0 w-20 h-20 border-t-2 border-r-2 border-blue-500/20 rounded-tr-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-20 h-20 border-b-2 border-l-2 border-indigo-500/20 rounded-bl-2xl"></div>
-
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/0 to-indigo-500/0 hover:from-blue-500/5 hover:to-indigo-500/5 transition-all duration-700 -z-10"></div>
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-blue-200/40 shadow-xl hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
 
               <div className="relative">
                 <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-2 flex items-center gap-2">
-                  <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+                  <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center shadow-lg">
                     <MessageSquare className="w-4 h-4 text-white" />
                   </span>
                   Send Message
@@ -150,9 +136,8 @@ export default function ContactForm() {
                 <p className="text-xs text-slate-600 mb-6">Fill out the form and we'll respond within 24 hours</p>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  {/* Name & Company (One Row) */}
+                  {/* Name & Company */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Name */}
                     <div className="relative">
                       <label className="block text-xs font-bold text-slate-700 mb-1.5">Your Name *</label>
                       <div className="relative">
@@ -169,7 +154,6 @@ export default function ContactForm() {
                       </div>
                     </div>
 
-                    {/* Company */}
                     <div className="relative">
                       <label className="block text-xs font-bold text-slate-700 mb-1.5">Company</label>
                       <div className="relative">
@@ -186,9 +170,8 @@ export default function ContactForm() {
                     </div>
                   </div>
 
-                  {/* Email & Phone (One Row) */}
+                  {/* Email & Phone */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Email */}
                     <div className="relative">
                       <label className="block text-xs font-bold text-slate-700 mb-1.5">Email *</label>
                       <div className="relative">
@@ -205,7 +188,6 @@ export default function ContactForm() {
                       </div>
                     </div>
 
-                    {/* Phone */}
                     <div className="relative">
                       <label className="block text-xs font-bold text-slate-700 mb-1.5">Phone</label>
                       <div className="relative">
@@ -243,7 +225,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="group relative w-full px-6 py-3 rounded-lg font-bold text-sm bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 overflow-hidden"
+                    className="group relative w-full px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-xl shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 overflow-hidden"
                   >
                     {/* Shimmer effect */}
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
@@ -263,7 +245,7 @@ export default function ContactForm() {
 
                   {/* Status Messages */}
                   {status === "success" && (
-                    <div className="flex items-center gap-2 p-3 rounded-lg bg-green-50 border border-green-200 text-green-700 text-xs animate-fade-in-up">
+                    <div className="flex items-center gap-2 p-3 rounded-lg bg-green-50 border border-green-200 text-green-700 text-xs">
                       <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                       <p className="font-semibold">Message sent! We'll respond within 24 hours.</p>
                     </div>

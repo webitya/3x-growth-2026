@@ -1,87 +1,97 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { Plus } from "lucide-react";
 
 export default function ServicesFAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
     {
-      q: "How long until we see results?",
-      a: "Most clients see improvement in 30–60 days. Predictable revenue usually comes within 90 days.",
+      question: "How long until we see results?",
+      answer: "Most clients see improvement in 30-60 days. Significant, sustainable growth typically happens within 90 days."
     },
     {
-      q: "Do you work with our sales team?",
-      a: "Yes. We coach, train, and guide your team. We don’t replace them—we make them better.",
+      question: "Do you work with our team or replace them?",
+      answer: "We work WITH your team. We train and coach them, we don't replace them."
     },
     {
-      q: "What if we don’t have a sales team?",
-      a: "No problem. We help you hire your first reps and build the correct sales systems from day one.",
+      question: "What if we're a startup with no sales team?",
+      answer: "We can help you hire your first reps AND set up the right systems from day one."
     },
     {
-      q: "Do we need a CRM?",
-      a: "No. You can start with a simple spreadsheet. Systems matter more than tools.",
+      question: "Do we need expensive CRM software?",
+      answer: "No. We work with whatever you have. Most SMEs can start with simple tools."
     },
     {
-      q: "Which industries do you work with?",
-      a: "We work with B2B companies across SaaS, services, manufacturing, and education.",
+      question: "What industries do you work with?",
+      answer: "We work across industries—SaaS, professional services, manufacturing, education. If you're B2B, we can help."
     },
     {
-      q: "Is there a minimum commitment?",
-      a: "Monthly support requires a 3-month commitment. Other projects are standalone.",
-    },
-    {
-      q: "Can we combine multiple services?",
-      a: "Yes. Many clients start with an Audit and then move into MQL/SQL setup or monthly support.",
-    },
-    {
-      q: "How do we know if you're a good fit?",
-      a: "Book a free call. We’ll tell you honestly if we can help—no pitch, no pressure.",
-    },
+      question: "Is there a minimum commitment?",
+      answer: "For monthly support, yes—3 months minimum. For project-based work (audit, MQL setup, SQL setup), no ongoing commitment required."
+    }
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4">
-        
+    <section className="relative py-12 bg-white">
+      {/* Background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
-            Frequently Asked Questions
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2">
+            Frequently Asked{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              Questions
+            </span>
           </h2>
-          <p className="text-sm text-slate-600 mt-2">
-            Clear, honest answers to the questions founders ask us most.
-          </p>
+          <p className="text-sm text-slate-600">Everything you need to know about our services</p>
         </div>
 
-        {/* FAQ List */}
-        <div className="divide-y divide-slate-200 border border-slate-200 rounded-lg">
-          {faqs.map((faq, idx) => (
-            <div key={idx} className="w-full">
+        {/* FAQ Accordion */}
+        <div className="space-y-3">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="group bg-white/80 backdrop-blur-sm rounded-xl border border-blue-200/40 overflow-hidden hover:shadow-lg hover:border-blue-300/60 transition-all duration-300"
+            >
               <button
-                onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
-                className="w-full flex justify-between items-center text-left px-4 py-4 hover:bg-slate-50"
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-full px-5 py-4 flex items-center justify-between text-left"
               >
-                <span className="text-slate-900 text-sm font-semibold">
-                  {faq.q}
+                <span className="font-bold text-slate-900 text-sm md:text-base pr-4">
+                  {faq.question}
                 </span>
-                <Plus
-                  size={18}
-                  className={`text-slate-600 transition-transform ${
-                    openIndex === idx ? "rotate-45" : ""
-                  }`}
+                <ChevronDown
+                  className={`w-5 h-5 text-blue-600 flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
-
-              {openIndex === idx && (
-                <div className="px-4 pb-4 text-sm text-slate-600 leading-relaxed">
-                  {faq.a}
+              <div
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                  }`}
+              >
+                <div className="px-5 pb-4 text-sm text-slate-700 leading-relaxed">
+                  {faq.answer}
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Hexagon Pattern Separator */}
+      <div className="absolute top-0 left-0 right-0 h-12 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-50/40 to-transparent"></div>
+        <div className="absolute inset-0 opacity-15" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l25.98 15v30L30 60 4.02 45V15z' fill='none' stroke='%233b82f6' stroke-width='1'/%3E%3C/svg%3E")`,
+          backgroundSize: '30px 30px'
+        }}></div>
       </div>
     </section>
   );

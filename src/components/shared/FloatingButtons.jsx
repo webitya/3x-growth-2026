@@ -31,7 +31,7 @@ export default function FloatingButtons() {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/916200207379"
+          href="https://wa.me/916200207379?text=Hi%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20sales%20consulting%20services.%20Can%20we%20discuss%20how%20you%20can%20help%20grow%20my%20business%3F"
           target="_blank"
           className="
             w-10 h-10 sm:w-12 sm:h-12

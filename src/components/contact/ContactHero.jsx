@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MapPin, Clock, Zap, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Sparkles, CheckCircle2 } from "lucide-react";
 
 export default function ContactHero() {
     const contactMethods = [
@@ -9,54 +9,60 @@ export default function ContactHero() {
             title: "Call Us",
             value: "+91 620 020 7379",
             href: "tel:+916200207379",
-            color: "blue"
+            gradient: "from-blue-500 to-cyan-500"
         },
         {
             icon: Mail,
             title: "Email Us",
             value: "contact@3xgrowth.com",
             href: "mailto:contact@3xgrowth.com",
-            color: "green"
+            gradient: "from-cyan-500 to-indigo-500"
         },
         {
             icon: MapPin,
             title: "Location",
             value: "India (Remote)",
             href: "#",
-            color: "purple"
+            gradient: "from-indigo-500 to-purple-500"
         },
         {
             icon: Clock,
             title: "Response Time",
             value: "Within 24 hours",
             href: "#",
-            color: "orange"
+            gradient: "from-purple-500 to-pink-500"
         }
     ];
 
     return (
-        <section className="relative pt-10 md:pt-12 pb-12 md:pb-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 overflow-hidden">
+        <section className="relative py-16 bg-gradient-to-br from-white via-blue-50/30 to-white overflow-hidden">
             {/* Background effects */}
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full animate-blob"></div>
-                <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full animate-blob animation-delay-1000"></div>
+            <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-10 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-blob"></div>
+                <div className="absolute bottom-10 left-10 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl animate-blob animation-delay-1000"></div>
+
+                {/* Grid */}
+                <div className="absolute inset-0 opacity-[0.02]" style={{
+                    backgroundImage: 'linear-gradient(to right, rgb(59, 130, 246) 1px, transparent 1px), linear-gradient(to bottom, rgb(59, 130, 246) 1px, transparent 1px)',
+                    backgroundSize: '60px 60px'
+                }}></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-12 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 border border-blue-200">
-                        <Zap className="w-3.5 h-3.5 text-blue-600" />
-                        <span className="text-xs font-bold text-blue-700 tracking-wide">Let's Talk</span>
+                <div className="text-center mb-10">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50/80 backdrop-blur-sm border border-blue-200/50 mb-6 shadow-lg shadow-blue-500/10">
+                        <Sparkles className="w-4 h-4 text-blue-600" />
+                        <span className="text-xs font-bold text-blue-700 tracking-wide">LET'S TALK</span>
                     </div>
 
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4">
                         Ready to{" "}
                         <span className="relative inline-block">
-                            <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">
                                 3X Your Sales?
                             </span>
-                            <span className="absolute -inset-1 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 blur-xl -z-10"></span>
+                            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full"></div>
                         </span>
                     </h1>
 
@@ -69,25 +75,19 @@ export default function ContactHero() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {contactMethods.map((method, idx) => {
                         const Icon = method.icon;
-                        const colorClasses = {
-                            blue: "from-blue-100 to-cyan-100 hover:from-blue-200 hover:to-cyan-200 group-hover:text-blue-600",
-                            green: "from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 group-hover:text-green-600",
-                            purple: "from-purple-100 to-indigo-100 hover:from-purple-200 hover:to-indigo-200 group-hover:text-purple-600",
-                            orange: "from-orange-100 to-yellow-100 hover:from-orange-200 hover:to-yellow-200 group-hover:text-orange-600"
-                        };
 
                         return (
                             <a
                                 key={idx}
                                 href={method.href}
-                                className="group relative bg-white rounded-xl p-5 border border-slate-200 shadow-sm hover:shadow-lg hover:border-blue-200 transition-all duration-300"
-                                style={{
-                                    animationDelay: `${idx * 75}ms`
-                                }}
+                                className="group relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-blue-200/40 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-300/60 hover:-translate-y-1 transition-all duration-300"
                             >
-                                <div className="flex flex-col items-center text-center space-y-3">
-                                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${colorClasses[method.color]} flex items-center justify-center transition-all duration-300`}>
-                                        <Icon className="w-6 h-6 text-slate-700 transition-colors" />
+                                {/* Hover Gradient Overlay */}
+                                <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${method.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+
+                                <div className="relative flex flex-col items-center text-center space-y-3">
+                                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${method.gradient} flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
+                                        <Icon className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
                                         <p className="text-xs font-semibold text-slate-500 mb-1">{method.title}</p>
@@ -98,6 +98,20 @@ export default function ContactHero() {
                         );
                     })}
                 </div>
+            </div>
+
+            {/* Bottom Separator */}
+            <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden pointer-events-none">
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-50/40 to-transparent"></div>
+                <svg className="absolute bottom-0 w-full h-full" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                    <path
+                        d="M0,30 Q300,15 600,30 T1200,30"
+                        stroke="rgb(96, 165, 250)"
+                        strokeWidth="1.5"
+                        fill="none"
+                        opacity="0.2"
+                    />
+                </svg>
             </div>
         </section>
     );

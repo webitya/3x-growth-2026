@@ -8,7 +8,7 @@ export const blogPosts = [
     excerpt:
       "Stop guessing. Learn the system that turns unpredictable revenue into consistent monthly growth.",
     author: "Sandeep Gupta",
-    date: "2024-01-15",
+    date: "2025-12-01",
     category: "Sales Systems",
     readTime: "8 min read",
     image: "/sales_metrics_dashboard_1764965932071.png",
@@ -109,7 +109,7 @@ Book a call — let's talk about your predictable pipeline.
     excerpt:
       "Stop wasting time on dead deals. Master BANT qualification and close faster.",
     author: "Sandeep Gupta",
-    date: "2024-01-08",
+    date: "2025-11-25",
     category: "Sales Skills",
     readTime: "6 min read",
     image: "/team_collaboration_1764965951665.png",
@@ -208,7 +208,7 @@ If you want to implement this in your team, let’s talk.
     excerpt:
       "Stop drowning in data. Focus on these 5 critical metrics to understand and grow your sales.",
     author: "Sandeep Gupta",
-    date: "2024-01-22",
+    date: "2025-11-18",
     category: "Sales Analytics",
     readTime: "7 min read",
     image: "/sales_metrics_dashboard_1764965932071.png",
@@ -329,7 +329,7 @@ Want help setting up your sales dashboard? Let's talk.
     excerpt:
       "Avoid expensive hiring mistakes. Build a sales team that actually delivers results.",
     author: "Sandeep Gupta",
-    date: "2024-01-29",
+    date: "2025-11-10",
     category: "Team Building",
     readTime: "9 min read",
     image: "/team_collaboration_1764965951665.png",
@@ -490,7 +490,7 @@ Ready to build a high-performing sales team? Book a call.
     excerpt:
       "Lead gen doesn't have to be expensive. Use these low-cost strategies to fill your pipeline.",
     author: "Sandeep Gupta",
-    date: "2024-02-05",
+    date: "2025-10-28",
     category: "Lead Generation",
     readTime: "8 min read",
     image: "/marketing_funnel_1764965968827.png",
@@ -664,7 +664,7 @@ Need help building a lead gen system for your business? Let's talk.
     excerpt:
       "Avoid CRM overwhelm. Pick the right tool that your team will actually use.",
     author: "Sandeep Gupta",
-    date: "2024-02-12",
+    date: "2025-10-15",
     category: "Sales Tools",
     readTime: "6 min read",
     image: "/crm_software_interface_1764966018324.png",
@@ -834,7 +834,7 @@ Need help setting up your CRM? Let's talk.
     excerpt:
       "Turn LinkedIn into your #1 lead source. A proven framework for B2B prospecting.",
     author: "Sandeep Gupta",
-    date: "2024-02-19",
+    date: "2025-10-05",
     category: "Lead Generation",
     readTime: "10 min read",
     image: "/team_collaboration_1764965951665.png",
@@ -1030,7 +1030,7 @@ Want help building a LinkedIn prospecting system? Let's connect.
     excerpt:
       "Your emails are being ignored. Here's how to write campaigns that get opened, read, and replied to.",
     author: "Sandeep Gupta",
-    date: "2024-02-26",
+    date: "2025-09-22",
     category: "Sales Skills",
     readTime: "8 min read",
     image: "/marketing_funnel_1764965968827.png",

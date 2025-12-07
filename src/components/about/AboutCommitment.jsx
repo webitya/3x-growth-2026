@@ -21,7 +21,7 @@ export default function AboutCommitment() {
       {/* FULL WIDTH BLUE SECTION */}
       <div className="w-full py-5 md:py-5 text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4">
 
-     
+
 
         <h3 className="text-3xl md:text-4xl font-bold mb-4">
           Why “3x Growth”?
@@ -45,7 +45,7 @@ export default function AboutCommitment() {
 
           {/* PRIMARY BUTTON — HARD CODED */}
           <a
-            href="tel:+916200207379"
+            href="/contact"
             className="
               px-7 py-3 rounded-xl font-semibold
               bg-white text-blue-700

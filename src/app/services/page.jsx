@@ -1,4 +1,5 @@
 import ServicesHero from "@/components/services/ServicesHero"
+import ServicesNav from "@/components/services/ServicesNav"
 import ServicesGrid from "@/components/services/ServicesGrid"
 import ServicesFAQ from "@/components/services/ServicesFAQ"
 import ServicesCTA from "@/components/services/ServicesCTA"
@@ -24,6 +25,7 @@ export default function Services() {
   return (
     <>
       <ServicesHero />
+      <ServicesNav />
       <ServicesGrid />
       <ServicesFAQ />
       <ServicesCTA />

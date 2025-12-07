@@ -4,9 +4,16 @@ import { Phone, Mail, Zap, Sparkles, ArrowRight, CheckCircle2 } from "lucide-rea
 
 export default function HomepageCTA() {
   return (
-    <section className="relative bg-slate-950 py-16 md:py-20 overflow-hidden border-t border-blue-500/20">
-      {/* Animated top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+    <section className="relative bg-slate-950 py-12 md:py-16 overflow-hidden border-t border-blue-500/20">
+      {/* Creative Top Separator - Sleek Gradient Lines */}
+      <div className="absolute top-0 left-0 right-0 h-16 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 to-transparent"></div>
+        <div className="absolute top-0 left-0 right-0 space-y-3 pt-4">
+          <div className="h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent"></div>
+          <div className="h-0.5 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent"></div>
+          <div className="h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent"></div>
+        </div>
+      </div>
 
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
@@ -20,8 +27,8 @@ export default function HomepageCTA() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
 
-        {/* Main CTA Card */}
-        <div className="relative rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-xl border border-blue-500/30 shadow-2xl shadow-blue-900/30 overflow-hidden p-8 md:p-12 group hover:border-blue-500/50 transition-all duration-500">
+        {/* Main CTA Card - Compact */}
+        <div className="relative rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-xl border border-blue-500/30 shadow-2xl shadow-blue-900/30 overflow-hidden p-6 md:p-10 group hover:border-blue-500/50 transition-all duration-500">
 
           {/* Animated border glow */}
           <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -49,16 +56,16 @@ export default function HomepageCTA() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center relative">
 
             {/* Left Content */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-600/10 border border-blue-500/30 backdrop-blur-sm">
                 <Zap className="w-3 h-3 text-blue-400 animate-pulse" />
                 <span className="text-xs font-bold text-blue-300">Limited Slots Available</span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight">
+              <h2 className="text-2xl md:text-3xl font-black text-white leading-tight">
                 Ready to{" "}
                 <span className="relative inline-block">
                   <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
@@ -72,29 +79,29 @@ export default function HomepageCTA() {
                 Book a free 30-minute sales audit and discover exactly how to scale your revenue predictably.
               </p>
 
-              {/* Trust indicators */}
-              <div className="flex flex-wrap gap-4 pt-2">
+              {/* Trust indicators - Compact */}
+              <div className="flex flex-wrap gap-3 pt-2">
                 <div className="flex items-center gap-2 text-xs text-slate-400">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-green-400" />
                   <span>No commitment required</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-slate-400">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-green-400" />
                   <span>100% actionable insights</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-slate-400">
-                  <CheckCircle2 className="w-4 h-4 text-green-400" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-green-400" />
                   <span>30-min session</span>
                 </div>
               </div>
             </div>
 
-            {/* Right CTAs */}
-            <div className="space-y-4">
+            {/* Right CTAs - Compact */}
+            <div className="space-y-3">
               {/* Primary CTA */}
               <a
-                href="tel:+916200207379"
-                className="group/btn relative block w-full px-6 py-4 rounded-xl font-bold text-base bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white shadow-xl shadow-blue-600/40 hover:shadow-blue-600/60 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 border-2 border-blue-400/30 overflow-hidden text-center"
+                href="/contact"
+                className="group/btn relative block w-full px-6 py-3.5 rounded-xl font-bold text-base bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white shadow-xl shadow-blue-600/40 hover:shadow-blue-600/60 hover:shadow-2xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 border-2 border-blue-400/30 overflow-hidden text-center"
               >
                 {/* Animated border */}
                 <span className="absolute inset-0 rounded-xl opacity-0 group-hover/btn:opacity-100 transition-opacity">
@@ -122,7 +129,7 @@ export default function HomepageCTA() {
               {/* Secondary CTA */}
               <a
                 href="mailto:contact@3xgrowth.com"
-                className="group/btn2 relative block w-full px-6 py-3.5 rounded-xl font-semibold text-sm bg-white/5 backdrop-blur-xl border border-blue-500/30 text-blue-300 hover:bg-white/10 hover:border-blue-400/50 hover:text-blue-200 transition-all duration-300 overflow-hidden text-center"
+                className="group/btn2 relative block w-full px-6 py-3 rounded-xl font-semibold text-sm bg-white/5 backdrop-blur-xl border border-blue-500/30 text-blue-300 hover:bg-white/10 hover:border-blue-400/50 hover:text-blue-200 transition-all duration-300 overflow-hidden text-center"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/10 to-blue-500/0 -translate-x-full group-hover/btn2:translate-x-full transition-transform duration-1000"></span>
 

@@ -40,7 +40,9 @@ export default function ServicesCTA() {
         {/* Compact CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6">
           <a
-            href="/contact"
+            href="https://calendly.com/salessyllabus"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-white text-blue-700 font-bold text-sm shadow-xl hover:shadow-white/20 hover:scale-105 transition-all duration-300"
           >
             <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />

@@ -66,14 +66,14 @@ export default function EnquiryForm() {
     };
 
     return (
-        <div className="relative w-full max-w-md rounded-2xl bg-white/90 backdrop-blur-2xl border border-blue-200/50 shadow-xl shadow-blue-500/20 p-5 transition-all duration-300 overflow-hidden group hover:shadow-blue-500/30 hover:border-blue-300/60">
+        <div className="relative w-full max-w-md rounded-2xl bg-slate-900/90 backdrop-blur-2xl border border-blue-500/30 shadow-xl shadow-blue-900/40 p-5 transition-all duration-300 overflow-hidden group hover:shadow-blue-800/50 hover:border-blue-400/50">
             {/* Subtle Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-blue-50/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             {/* Compact Header */}
             <div className="relative z-10 mb-4">
-                <h3 className="text-lg font-bold text-blue-900 mb-0.5">Get Started Today</h3>
-                <p className="text-xs text-slate-600">We'll respond within 24 hours</p>
+                <h3 className="text-lg font-bold text-white mb-0.5">Drop your query</h3>
+                <p className="text-xs text-blue-100/80">We'll respond within 24 hours</p>
             </div>
 
             {/* Compact Form */}
@@ -117,7 +117,7 @@ export default function EnquiryForm() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-blue-50/50 border border-blue-200/50 text-sm text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-slate-800/80 border border-slate-700/50 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all"
                     placeholder="Company Name (Optional)"
                 />
 
@@ -126,12 +126,12 @@ export default function EnquiryForm() {
                     <button
                         type="button"
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-blue-50/50 border border-blue-200/50 text-left text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all flex items-center justify-between"
+                        className="w-full px-3.5 py-2.5 rounded-lg bg-slate-800/80 border border-slate-700/50 text-left text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all flex items-center justify-between"
                     >
-                        <span className={formData.service ? "text-slate-900" : "text-slate-500"}>
+                        <span className={formData.service ? "text-white" : "text-slate-400"}>
                             {formData.service || "Select Service *"}
                         </span>
-                        <ChevronDown className={`w-4 h-4 text-blue-600 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                        <ChevronDown className={`w-4 h-4 text-blue-400 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
                     </button>
 
                     {/* Compact Dropdown Menu */}
@@ -160,7 +160,7 @@ export default function EnquiryForm() {
                     value={formData.description}
                     onChange={handleChange}
                     rows="2"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-blue-50/50 border border-blue-200/50 text-sm text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all resize-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-slate-800/80 border border-slate-700/50 text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-400 transition-all"
                     placeholder="Brief description (Optional)"
                 />
 

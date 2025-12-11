@@ -279,7 +279,9 @@ export default function HomepageHero() {
               {/* Primary CTA - Compact */}
               <a
                 ref={buttonRef}
-                href="/contact"
+                href="https://calendly.com/salessyllabus"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden border border-white/30"
                 style={{
                   transform: `translate(${buttonPosition.x}px, ${buttonPosition.y}px)`

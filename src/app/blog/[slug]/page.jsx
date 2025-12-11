@@ -205,7 +205,9 @@ export default async function BlogPost({ params }) {
             </p>
 
             <Link
-              href="tel:+916200207379"
+              href="https://calendly.com/salessyllabus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 bg-white text-blue-600 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-white/30 transition-all hover:scale-105"
             >
               Book Your Free Consultation

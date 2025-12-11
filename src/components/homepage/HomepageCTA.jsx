@@ -56,7 +56,9 @@ export default function HomepageCTA() {
           <div className="space-y-3">
             {/* Primary CTA */}
             <a
-              href="/contact"
+              href="https://calendly.com/salessyllabus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative block w-full px-8 py-4 rounded-xl font-bold text-base bg-white text-blue-700 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden text-center"
             >
               {/* Shimmer Effect */}

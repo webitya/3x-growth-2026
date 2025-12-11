@@ -5,137 +5,88 @@ import { Check, Clock, DollarSign, Phone, Target, Users, TrendingUp, Search } fr
 export default function ServicesGrid() {
   const services = [
     {
-      id: "mql-setup",
+      id: "sales-audit",
+      icon: Search,
+      title: "Sales and Marketing Audit",
+      subtitle: "Find Out Exactly What's Wrong",
+      problem: "Before fixing anything, we need to understand what's broken. You might be targeting the wrong people, losing deals at specific stages, or missing competitor moves.",
+      solution: "Our audit shows you exactly where you're losing money and provides a clear roadmap to fix it.",
+      analyzeAreas: [
+        { title: "Who should you sell to?", desc: "Are you targeting the right customers?" },
+        { title: "Where do leads come from?", desc: "Which channels work, which don't?" },
+        { title: "Where do deals die?", desc: "At what stage do you lose most opportunities?" },
+        { title: "How good is your team?", desc: "Can they generate leads, qualify, present, handle objections?" },
+        { title: "Do reps really qualify?", desc: "Or do they just hope deals will close?" },
+        { title: "What are competitors doing?", desc: "What are you missing?" }
+      ],
+      deliverables: [
+        { icon: "📄", title: "20-50 Page Report", desc: "Clear findings and data" },
+        { icon: "📋", title: "90-Day Action Plan", desc: "With priorities" },
+        { icon: "🛣️", title: "Clear Roadmap", desc: "What to fix first" }
+      ],
+      timeline: "2-3 weeks",
+      investment: "Custom Quote",
+      result: "You'll know exactly what's broken, why it's broken, and what to fix first.",
+      bestFor: "Companies unclear on why growth has stalled or those planning to scale.",
+      gradient: "from-orange-500 to-red-500",
+      bg: "from-orange-50/80 to-red-50/80"
+    },
+    {
+      id: "bot-model",
       icon: Target,
-      title: "Get More Quality Leads",
-      subtitle: "MQL Setup",
-      problem: "You're either getting no leads, or getting the wrong leads. Your marketing budget feels wasted because nobody's buying.",
-      solution: "We build you a complete lead generation system that brings in people who actually want to buy.",
+      title: "Lead Gen & Qualification",
+      subtitle: "BOT Model (Build-Operate-Transfer)",
+      problem: "Most sales teams waste time chasing deals that will never close. You need a predictable engine, not just random actions.",
+      solution: "We build your complete B2B lead generation & qualification engine, operate it until it runs smoothly, and then transfer it to your team.",
+      sqlCriteria: ["Approved budget", "Decision-making authority", "Clear need for your solution", "Defined buying timeline"],
       includes: [
         {
-          title: "Outbound Sales Setup",
-          items: ["Apollo.io setup & targeting", "Build targeted contact lists", "Create response-getting campaigns"]
+          title: "MQL Setup (Enquiries)",
+          items: ["Inbound & outbound workflows", "Criteria for enquiry-level MQLs", "Tools, automation & tracking"]
         },
         {
-          title: "Email & Call Scripts",
-          items: ["Proven meeting-booking templates", "Industry-personalized messaging", "A/B tested until they work"]
+          title: "SQL Setup (Qualification)",
+          items: ["Qualification checklist", "High-impact questions", "Cost–value templates", "Opportunity scoring/grading"]
         },
         {
-          title: "Inbound Lead Capture",
-          items: ["Website visitor capture systems", "Buyer-attracting content", "High-converting forms"]
-        },
-        {
-          title: "Team Training",
-          items: ["SDR meeting generation training", "Quality outreach coaching", "Confidence building"]
-        },
-        {
-          title: "Testing & Refinement",
-          items: ["Test campaign execution", "Performance measurement", "Continuous optimization"]
+          title: "Training & Handover",
+          items: ["Team training on the system", "Operational transparency", "Full transfer of assets"]
         }
       ],
-      timeline: "4-6 weeks",
-      investment: "Custom quote",
-      result: "Consistent flow of meetings with qualified prospects who match your ideal customer profile.",
-      bestFor: "Companies with no consistent lead flow, or those wasting money on marketing that doesn't convert.",
+      timeline: "3-6 months",
+      investment: "Custom Quote",
+      result: "A complete engine producing MQLs and high-intent SQLs, ensuring your team only speaks to real buyers.",
+      bestFor: "Companies wanting to build an internal asset for long-term growth.",
       gradient: "from-blue-500 to-cyan-500",
       bg: "from-blue-50/80 to-cyan-50/80"
     },
     {
-      id: "sql-setup",
+      id: "outsourced-model",
       icon: Users,
-      title: "Stop Chasing Dead Deals",
-      subtitle: "SQL Setup",
-      problem: "Your sales team is busy, but nothing closes. They spend weeks talking to people who can't or won't buy.",
-      solution: "We teach your team how to qualify properly—so they only spend time on deals they can actually win.",
-      sqlCriteria: ["Budget approved", "Authority to decide", "Clear need for your solution", "Timeline to buy"],
+      title: "Outsourced Sales Model",
+      subtitle: "End-to-End Responsibility",
+      problem: "Hiring, training, and managing a sales team is difficult, expensive, and time-consuming. You want results without the headache.",
+      solution: "We take full responsibility for delivering Sales Qualified Leads (SQLs). We build and manage the entire operation from our premises.",
       includes: [
         {
-          title: "Qualification Framework",
-          items: ["Simple team checklist", "Clear opportunity criteria", "Deal scoring system"]
+          title: "Complete Operation",
+          items: ["Recruitment & onboarding", "Training & management", "Project management"]
         },
         {
-          title: "BANT Questions",
-          items: ["Buying intent questions", "Decision maker identification", "Budget & timeline techniques"]
+          title: "Our Deliverables",
+          items: ["Generate high-quality enquiries", "Qualify each into specific SQLs", "Work with your team to convert"]
         },
         {
-          title: "Tools & Templates",
-          items: ["Cost-benefit analysis", "TCO calculators", "Forecasting documentation"]
-        },
-        {
-          title: "Team Training",
-          items: ["Workshop-style training", "Scenario role-playing", "Ongoing coaching"]
-        },
-        {
-          title: "Implementation Support",
-          items: ["Rollout assistance", "Issue resolution", "Adoption ensuring"]
+          title: "Transparency",
+          items: ["Timely performance reports", "Operational transparency", "Seamless communication"]
         }
       ],
-      timeline: "3-4 weeks",
-      investment: "Custom quote",
-      result: "Your team only spends time on deals they can win. Forecast accuracy improves dramatically.",
-      bestFor: "Companies with lots of activity but low close rates, or those who can't predict which deals will actually close.",
-      gradient: "from-indigo-500 to-blue-500",
-      bg: "from-indigo-50/80 to-blue-50/80"
-    },
-    {
-      id: "monthly-support",
-      icon: TrendingUp,
-      title: "Monthly Sales Support",
-      subtitle: "Ongoing Partnership",
-      problem: "You need sales leadership, but can't afford (or don't want) a full-time VP of Sales.",
-      solution: "Think of us as your part-time sales leader. We commit 8, 10, or 20 hours per month to solve whatever's blocking your team.",
-      supportAreas: [
-        {
-          title: "Lead Generation Support",
-          items: ["Campaign review & improvement", "Script optimization", "SDR coaching", "Weekly dashboards"]
-        },
-        {
-          title: "Sales Qualification Support",
-          items: ["Call feedback", "Deal reality assessment", "Decision maker strategy", "Opportunity scoring"]
-        },
-        {
-          title: "Deal Closing Support",
-          items: ["Big deal strategy sessions", "Objection handling", "Proposal improvement", "Follow-up sequences"]
-        }
-      ],
-      plans: [
-        { hours: "8 hours/month", price: "Best for small teams" },
-        { hours: "10 hours/month", price: "Most popular" },
-        { hours: "20 hours/month", price: "For growing teams" }
-      ],
-      benefits: ["Dedicated Slack/WhatsApp access", "Weekly check-in calls", "Monthly performance review", "Access to templates & resources"],
-      timeline: "Ongoing (3-month minimum)",
-      result: "More deals close, fewer fall through cracks, your team gets stronger every month.",
-      bestFor: "Companies that need ongoing sales leadership without the full-time cost.",
+      timeline: "Ongoing",
+      investment: "Custom Quote",
+      result: "We act as your extended team, delivering fully verified, high-intent SQLs directly to your pipeline.",
+      bestFor: "Companies who want results (SQLs) and prefer to outsource the operational heavy lifting.",
       gradient: "from-purple-500 to-indigo-500",
       bg: "from-purple-50/80 to-indigo-50/80"
-    },
-    {
-      id: "sales-audit",
-      icon: Search,
-      title: "Sales Team Audit",
-      subtitle: "Diagnostic Deep Dive",
-      problem: "You know something's wrong with your sales, but you don't know what. You're making guesses and wasting money.",
-      solution: "We audit your entire sales operation and give you a clear roadmap of exactly what to fix.",
-      analyzeAreas: [
-        { title: "Your Ideal Customer", desc: "Who to target, best customer patterns" },
-        { title: "Lead Generation", desc: "Channel effectiveness, messaging resonance" },
-        { title: "Sales Process", desc: "Deal death points, biggest drop-offs" },
-        { title: "Team Skills", desc: "Lead generation, qualification, closing abilities" },
-        { title: "Qualification Quality", desc: "Real qualifying vs hoping, pipeline accuracy" },
-        { title: "Competitive Analysis", desc: "Competitor advantages, unique positioning" }
-      ],
-      deliverables: [
-        { icon: "📄", title: "30-50 Page Audit Report", desc: "Clear findings with data, specific examples, honest assessment" },
-        { icon: "📋", title: "90-Day Action Plan", desc: "Prioritized fixes, clear ownership, expected impact" },
-        { icon: "📞", title: "2-Hour Strategy Session", desc: "Walk through findings, Q&A, implementation discussion" }
-      ],
-      timeline: "2-3 weeks",
-      investment: "₹X,XX,XXX",
-      result: "Complete clarity on what's broken, why it's broken, and exactly how to fix it.",
-      bestFor: "Companies that know they have problems but aren't sure where to start, or those considering hiring more reps but wanting to fix the system first.",
-      gradient: "from-orange-500 to-red-500",
-      bg: "from-orange-50/80 to-red-50/80"
     }
   ];
 
@@ -293,7 +244,9 @@ export default function ServicesGrid() {
                       </div>
                       <div className="md:col-span-1">
                         <a
-                          href="/contact"
+                          href="https://calendly.com/salessyllabus"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className={`block w-full px-4 py-2.5 rounded-xl bg-gradient-to-r ${service.gradient} text-white font-bold text-sm text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300`}
                         >
                           Book a Call

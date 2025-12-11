@@ -161,7 +161,7 @@ export default function Navbar() {
 
               {/* Premium CTA Button */}
               <a
-                href="tel:+916200207379"
+                href="https://calendly.com/salessyllabus"
                 className="
                   group relative px-6 py-3 rounded-xl font-bold text-sm
                   bg-gradient-to-r from-blue-600 to-blue-700

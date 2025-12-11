@@ -162,7 +162,9 @@ export default function AboutTeam() {
                         {/* CTA - Compact */}
                         <div className="pt-2">
                             <a
-                                href="/contact"
+                                href="https://calendly.com/salessyllabus"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-sm shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300"
                             >
                                 <Phone className="w-4 h-4" />

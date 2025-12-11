@@ -135,7 +135,9 @@ export default function NavbarDrawer({ isOpen, onClose, navLinks }) {
           <div className="mt-auto pt-6 border-t border-blue-200/50 space-y-3">
             {/* Primary CTA */}
             <a
-              href="tel:+916200207379"
+              href="https://calendly.com/salessyllabus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 group relative block w-full text-center 
                 px-6 py-3.5 rounded-lg font-semibold text-sm

@@ -5,25 +5,46 @@ import { Star, Quote } from "lucide-react";
 export default function HomepageSocialProof() {
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      role: "CEO, TechStart India",
-      image: "RK",
+      name: "Ankur Goyal",
+      role: "Founder, Agsuite Technology",
+      image: "AG",
       rating: 5,
-      quote: "3x Growth transformed our sales from chaotic to systematic. Revenue is up 220% and finally predictable."
+      quote: "3X Growth helped us establish a strong lead-verification process that saved our sales team enormous time and energy by eliminating dead leads."
     },
     {
-      name: "Priya Sharma",
-      role: "Founder, CloudSolutions",
-      image: "PS",
+      name: "Harsha Jain",
+      role: "Founder, PC Soft",
+      image: "HJ",
       rating: 5,
-      quote: "Best investment we made. Went from guessing to knowing exactly where our next sale will come from."
+      quote: "3X Growth enabled us to hire the right sales team through their proven framework. Their approach brought structure and clarity to our hiring."
     },
     {
-      name: "Amit Patel",
-      role: "Director, SalesPro",
-      image: "AP",
+      name: "Kadir Mujawar",
+      role: "Founder, Twigsoft",
+      image: "KM",
       rating: 5,
-      quote: "They fixed our broken sales process in 3 months. Our close rate doubled and sales cycles are 40% shorter."
+      quote: "Working with Sandeep is highly engaging. We were able to resolve our sales and marketing challenges quickly and effectively."
+    },
+    {
+      name: "Shabbir Merchant",
+      role: "Founder, Pragmatic",
+      image: "SM",
+      rating: 5,
+      quote: "The audit done by 3X Growth was phenomenal. It helped us identify and focus on the right problems. Their approach to team building is exceptional."
+    },
+    {
+      name: "Yogesh Pawar",
+      role: "Founder, Digital Edu IT Solution",
+      image: "YP",
+      rating: 5,
+      quote: "They helped us build a complete sales process, making our sales and marketing efforts fully measurable and performance-driven."
+    },
+    {
+      name: "Brijesh Singh",
+      role: "Founder, Groots Technology",
+      image: "BS",
+      rating: 5,
+      quote: "The sales process set up by 3X Growth Consulting helped us organize our entire efforts and consistently generate quality leads."
     }
   ];
 
@@ -65,7 +86,7 @@ export default function HomepageSocialProof() {
             Trusted by{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
-                50+ SME Founders
+                50+ Companies
               </span>
               <span className="absolute -inset-1 bg-gradient-to-r from-blue-600/10 to-blue-800/10 blur-xl -z-10"></span>
             </span>

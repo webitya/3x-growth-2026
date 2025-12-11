@@ -25,7 +25,7 @@ export default function Footer() {
     ],
     Resources: [
       { label: "Case Studies", href: "/case-studies" },
-      { label: "Free Audit", href: "/audit" },
+      { label: "Free Audit", href: "https://calendly.com/3xgrowth" },
       { label: "Sales Tools", href: "/tools" },
       { label: "Newsletter", href: "#newsletter" },
     ],
@@ -100,7 +100,7 @@ export default function Footer() {
                 </span>
               </Link>
               <p className="text-slate-600 text-sm leading-relaxed max-w-md">
-                Building predictable sales systems for SME founders since 2016. Transform your sales process with proven strategies.
+                Building predictable sales systems for companies since 2016. Transform your sales process with proven strategies.
               </p>
 
               {/* Social Links */}
@@ -202,7 +202,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold text-blue-900 uppercase tracking-wider">Get Started</h3>
 
             <a
-              href="tel:+916200207379"
+              href="https://calendly.com/salessyllabus"
               className="group relative px-5 py-3 rounded-lg font-semibold text-sm bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 border border-white/30 overflow-hidden flex items-center gap-2 justify-center w-full"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>

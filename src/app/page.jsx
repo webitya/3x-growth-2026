@@ -2,6 +2,7 @@ import HomepageHero from "@/components/homepage/HomepageHero"
 import HomepageProblem from "@/components/homepage/HomepageProblem"
 import HomepageSolution from "@/components/homepage/HomepageSolution"
 import HomepageSocialProof from "@/components/homepage/HomepageSocialProof"
+import HomepageCaseStudies from "@/components/homepage/HomepageCaseStudies"
 import HomepageServices from "@/components/homepage/HomepageServices"
 import HomepageCTA from "@/components/homepage/HomepageCTA"
 
@@ -25,6 +26,7 @@ export default function Home() {
       <HomepageProblem />
       <HomepageSolution />
       <HomepageSocialProof />
+      <HomepageCaseStudies />
       <HomepageServices />
       <HomepageCTA />
     </>

@@ -24,7 +24,7 @@ export default function Footer() {
       { label: "Consulting", href: "/services#consulting" },
     ],
     Resources: [
-      { label: "Case Studies", href: "/case-studies" },
+      { label: "Case Studies", href: "/#case-studies" },
       { label: "Free Audit", href: "https://calendly.com/3xgrowth" },
       { label: "Sales Tools", href: "/tools" },
       { label: "Newsletter", href: "#newsletter" },

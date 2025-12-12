@@ -7,7 +7,7 @@ import { caseStudies } from "../../data/casestudydata";
 
 export default function HomepageCaseStudies() {
     return (
-        <section id="case-studies" className="relative w-full py-16 md:py-24 bg-slate-50 overflow-hidden">
+        <section id="case-studies" className="relative w-full py-12 md:py-16 bg-slate-50 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{
                 backgroundImage: 'radial-gradient(#3b82f6 1px, transparent 1px)',
@@ -17,7 +17,7 @@ export default function HomepageCaseStudies() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
-                <div className="text-center mb-16 space-y-4">
+                <div className="text-center mb-12 space-y-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full">
                         <Briefcase className="w-3 h-3" />
                         Proof of Work
@@ -31,7 +31,7 @@ export default function HomepageCaseStudies() {
                 </div>
 
                 {/* Case Studies Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                     {caseStudies.map((study) => (
                         <Link
                             key={study.id}
@@ -39,7 +39,7 @@ export default function HomepageCaseStudies() {
                             className="group relative flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-500 hover:-translate-y-1"
                         >
                             {/* Image Container */}
-                            <div className="relative w-full h-64 overflow-hidden bg-slate-100">
+                            <div className="relative w-full h-48 overflow-hidden bg-slate-100">
                                 <Image
                                     src={study.image}
                                     alt={study.title}
@@ -60,42 +60,41 @@ export default function HomepageCaseStudies() {
                                         <Target className="w-4 h-4 text-blue-400" />
                                         <span className="text-xs font-semibold uppercase tracking-wider text-blue-300">{study.service}</span>
                                     </div>
-                                    <h3 className="text-xl md:text-2xl font-bold leading-tight group-hover:underline decoration-blue-400 decoration-2 underline-offset-4 transition-all">
+                                    <h3 className="text-xl font-bold leading-tight group-hover:underline decoration-blue-400 decoration-2 underline-offset-4 transition-all line-clamp-2">
                                         {study.title}
                                     </h3>
                                 </div>
                             </div>
 
                             {/* Content Body */}
-                            <div className="flex-1 p-6 md:p-8 flex flex-col">
-                                <p className="text-slate-600 mb-6 line-clamp-3 leading-relaxed">
+                            <div className="flex-1 p-5 flex flex-col">
+                                <p className="text-slate-600 text-sm mb-4 line-clamp-3 leading-relaxed">
                                     {study.summary}
                                 </p>
 
                                 {/* Key Results Grid */}
-                                <div className="grid grid-cols-3 gap-4 py-4 mb-6 border-y border-slate-100 bg-slate-50/50 rounded-xl px-4">
+                                <div className="grid grid-cols-3 gap-2 py-3 mb-4 border-y border-slate-100 bg-slate-50/50 rounded-xl px-2">
                                     {study.results.map((result, idx) => (
                                         <div key={idx} className="text-center">
-                                            <div className="text-lg md:text-xl font-black text-blue-600">{result.value}</div>
-                                            <div className="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-wide">{result.label}</div>
+                                            <div className="text-base font-black text-blue-600">{result.value}</div>
+                                            <div className="text-[9px] font-semibold text-slate-500 uppercase tracking-wide truncate px-1">{result.label}</div>
                                         </div>
                                     ))}
                                 </div>
 
                                 {/* Footer */}
                                 <div className="mt-auto flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 font-bold text-sm">
+                                    <div className="flex items-center gap-2">
+                                        <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 font-bold text-xs">
                                             {study.clientName.charAt(0)}
                                         </div>
                                         <div className="text-sm">
-                                            <div className="font-bold text-slate-900">{study.clientName}</div>
-                                            <div className="text-xs text-slate-500">View Case Study</div>
+                                            <div className="font-bold text-slate-900 line-clamp-1">{study.clientName}</div>
                                         </div>
                                     </div>
 
-                                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                                        <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
+                                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                                        <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                                     </span>
                                 </div>
                             </div>

@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function CaseStudiesPage() {
     return (
-        <main className="pt-20">
+        <main>
             <HomepageCaseStudies />
             <HomepageCTA />
         </main>

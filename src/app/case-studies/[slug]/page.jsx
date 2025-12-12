@@ -11,8 +11,9 @@ export function generateStaticParams() {
     }));
 }
 
-export default function CaseStudyPage({ params }) {
-    const study = caseStudies.find((s) => s.slug === params.slug);
+export default async function CaseStudyPage({ params }) {
+    const { slug } = await params;
+    const study = caseStudies.find((s) => s.slug === slug);
 
     if (!study) {
         notFound();
@@ -20,30 +21,22 @@ export default function CaseStudyPage({ params }) {
 
     return (
         <main className="bg-white min-h-screen">
-            {/* Sticky Top Bar for Navigation */}
-            <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-                    <Link
-                        href="/#case-studies"
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors"
-                    >
-                        <ArrowLeft className="w-4 h-4" />
-                        Back to Case Studies
-                    </Link>
-                    <Link href="/contact" className="px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg hover:bg-blue-700 transition-colors">
-                        Get Similar Results
-                    </Link>
-                </div>
-            </div>
-
             {/* Hero Section */}
-            <section className="relative pt-12 pb-20 overflow-hidden bg-slate-900 text-white">
+            <section className="relative pt-24 pb-20 overflow-hidden bg-slate-900 text-white">
                 <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-900/40 to-transparent"></div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row gap-12 items-center">
                         <div className="flex-1 space-y-6">
+                            <Link
+                                href="/case-studies"
+                                className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors mb-2 group"
+                            >
+                                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                                Back to Case Studies
+                            </Link>
+
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm font-semibold">
                                 {study.industry}
                             </div>

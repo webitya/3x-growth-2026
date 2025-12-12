@@ -11,6 +11,19 @@ export const caseStudies = [
         challenge: "TechFlow Systems, a Pune-based enterprise SaaS provider, was relying entirely on founder-led sales and referrals. They had zero predictable outbound lead generation mechanism, resulting in unpredictable revenue months and inability to forecast growth.",
         solution: "We deployed our 'Lead Gen & Qualification (BOT)' model. Phase 1 involved building a hyper-targeted list of 2000+ CIOs in the Indian manufacturing sector. Phase 2 was crafting a multi-channel outreach sequence. Phase 3 involved our dedicated SDRs running the campaigns and booking qualified meetings (SQLs) for their closing team.",
         outcome: "Within 6 months, we generated 140+ qualified meetings, resulting in ₹2.5 Cr in new pipeline and closing 3 major enterprise contracts worth ₹85 Lakhs. The entire system was then transferred to their in-house team.",
+        clientProfile: {
+            founded: "2018",
+            location: "Pune, India",
+            teamSize: "50-200"
+        },
+        techStack: ["HubSpot CRM", "LinkedIn Sales Navigator", "Apollo.io", "Lemlist"],
+        timeline: "6 Months",
+        implementationSteps: [
+            { title: "Data Building", description: "Curated 2,000+ verified contacts of CIOs in Mfg sector." },
+            { title: "Outreach Setup", description: "Created 4-step multi-channel sequences (Email + LinkedIn)." },
+            { title: "SDR Deployment", description: "Deployed 2 trained SDRs to execute campaigns & qualify leads." },
+            { title: "Transfer", description: "Hired & trained internal team to take over operations." }
+        ],
         results: [
             { label: "Pipeline Generated", value: "₹2.5 Cr" },
             { label: "Qualified Meetings", value: "140+" },
@@ -34,6 +47,19 @@ export const caseStudies = [
         challenge: "LogiSolutions had decent inbound lead flow but a poor conversion rate of < 2%. They were spending heavily on ads but couldn't understand why leads weren't closing. The sales team blamed marketing for 'bad leads', and marketing blamed sales for 'laziness'.",
         solution: "We conducted a comprehensive 'Sales & Marketing Audit'. We analyzed 500+ past leads, listened to 50+ sales calls, and reviewed their CRM usage. We discovered that 60% of leads were never followed up after the first attempt, and the sales script was completely feature-focused rather than problem-focused.",
         outcome: "We implemented a 5-touch follow-up cadence and rewrote their sales script. First-month conversion rates jumped to 8%. We recovered 'dead' leads from the past 3 months, resulting in an immediate ₹15 Lakh revenue boost.",
+        clientProfile: {
+            founded: "2015",
+            location: "Mumbai, India",
+            teamSize: "100+"
+        },
+        techStack: ["Zoho CRM", "Exotel", "Google Ads"],
+        timeline: "3 Weeks (Audit)",
+        implementationSteps: [
+            { title: " CRM Audit", description: "Analyzed leakages in lead stages & follow-up activities." },
+            { title: "Call Review", description: "Listened to 50+ recorded calls to identify script gaps." },
+            { title: "Process Redesign", description: "Created new 5-touch cadence & objection handling scripts." },
+            { title: "Training", description: "Conducted 2-day workshop to align sales team on new process." }
+        ],
         results: [
             { label: "Conversion Rate", value: "2% ➝ 8%" },
             { label: "Immediate Revenue", value: "₹15 Lakh" },
@@ -57,6 +83,19 @@ export const caseStudies = [
         challenge: "FinServe, a Mumbai startup, had a great product but no sales DNA. Hiring and training sales reps was proving too slow and expensive. They needed to hit aggressive revenue targets to secure their next funding round but were stalling.",
         solution: "They opted for our 'Outsourced Sales Model'. We deployed a pod of 2 senior SDRs and 1 Account Executive. We took over their entire sales function—from prospecting to closing. We integrated directly into their Slack and CRM, acting as their internal team.",
         outcome: "We hit their year-end target in just 5 months, adding ₹1.2 Cr in Annual Recurring Revenue (ARR). This traction helped them successfully raise their Series A funding.",
+        clientProfile: {
+            founded: "2020",
+            location: "Bangalore, India",
+            teamSize: "10-50"
+        },
+        techStack: ["Salesforce", "Outreach.io", "Lusha", "Slack"],
+        timeline: "5 Months",
+        implementationSteps: [
+            { title: "Team Deployment", description: "Deployed 2 SDRs + 1 AE within 10 days." },
+            { title: "Integration", description: "Set up Slack channels & CRM access for seamless comms." },
+            { title: "Pipeline Build", description: "Generated 50+ SQLs in first 60 days via cold outreach." },
+            { title: "Closing", description: "AE closed ₹1.2 Cr ARR deals directly." }
+        ],
         results: [
             { label: "New ARR", value: "₹1.2 Cr" },
             { label: "Time to Target", value: "5 Months" },
@@ -80,6 +119,19 @@ export const caseStudies = [
         challenge: "ConstructInfra sells high-ticket software to real estate developers. Their sales team was wasting 30+ hours a week talking to small contractors who couldn't afford their solution. Morale was low, and CAC (Customer Acquisition Cost) was skyrocketing.",
         solution: "We implemented a rigorous qualification framework (BANT) within their BOT model. We set up an automated pre-qualification form and had our SDRs do a 10-minute 'triage' call before passing any lead to a Senior AE. Only leads with a verified budget >₹10L were passed through.",
         outcome: "Sales team productivity doubled. They went from doing 20 demos a week (closing 1) to doing 8 highly qualified demos a week (closing 3). CAC dropped by 45% within the first quarter.",
+        clientProfile: {
+            founded: "2019",
+            location: "Delhi NCR, India",
+            teamSize: "50-100"
+        },
+        techStack: ["LeadSquared", "WhatsApp Business API", "Intercom"],
+        timeline: "3 Months",
+        implementationSteps: [
+            { title: "Qual Framework", description: "Defined strict BANT criteria (Budget >₹10L)." },
+            { title: "Automation", description: "Implemented WhatsApp pre-qual bots to filter junk leads." },
+            { title: "SDR Triage", description: "Deployed SDRs to call & verify budget before demo." },
+            { title: "Handover", description: "Only booked demos for AEs with qualified prospects." }
+        ],
         results: [
             { label: "Close Rate", value: "3x Increase" },
             { label: "CAC Reduction", value: "45%" },

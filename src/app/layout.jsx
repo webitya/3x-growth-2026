@@ -27,14 +27,14 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#0066CC" />
         <meta name="mobile-web-app-capable" content="yes" />
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body className={`${inter.className} bg-white text-slate-900`}>
+      <body className={`${inter.className} bg-white text-slate-900`} suppressHydrationWarning>
         <Navbar />
         <FloatingButtons />
         <main className="min-h-screen">{children}</main>

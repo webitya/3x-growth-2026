@@ -72,7 +72,7 @@ export default function HomepageCTA() {
 
             {/* Secondary CTA */}
             <a
-              href="mailto:contact@salessyllabus.com"
+              href="mailto:3xgrowth.in@gmail.com"
               className="group relative block w-full px-8 py-4 rounded-xl font-bold text-base bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 hover:-translate-y-1 transition-all duration-300 overflow-hidden text-center"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
@@ -92,7 +92,7 @@ export default function HomepageCTA() {
               <span>•</span>
               <div className="flex items-center gap-1.5 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:contact@salessyllabus.com">Contact</a>
+                <a href="mailto:3xgrowth.in@gmail.com">Contact</a>
               </div>
             </div>
           </div>

@@ -18,16 +18,13 @@ export default function Footer() {
       { label: "Contact", href: "/contact" },
     ],
     Services: [
-      { label: "Sales Strategy", href: "/services#strategy" },
-      { label: "Lead Generation", href: "/services#leads" },
-      { label: "Sales Training", href: "/services#training" },
-      { label: "Consulting", href: "/services#consulting" },
+      { label: "Sales & Marketing Audit", href: "/services#sales-audit" },
+      { label: "Lead Gen & Qualification (BOT)", href: "/services#bot-model" },
+      { label: "Outsourced Sales Model", href: "/services#outsourced-model" },
     ],
     Resources: [
       { label: "Case Studies", href: "/case-studies" },
-      { label: "Free Audit", href: "https://calendly.com/3xgrowth" },
-      { label: "Sales Tools", href: "/tools" },
-      { label: "Newsletter", href: "#newsletter" },
+      { label: "Free Audit", href: "https://calendly.com/salessyllabus" },
     ],
     Legal: [
       { label: "Privacy", href: "/privacy" },
@@ -212,9 +209,9 @@ export default function Footer() {
             </a>
 
             <div className="space-y-2 text-sm text-slate-600">
-              <a href="mailto:contact@3xgrowth.com" className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
+              <a href="mailto:3xgrowth.in@gmail.com" className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
                 <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                <span className="truncate">contact@3xgrowth.com</span>
+                <span className="truncate">3xgrowth.in@gmail.com</span>
               </a>
               <a href="tel:+916200207379" className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
                 <Phone className="w-4 h-4 group-hover:rotate-12 transition-transform" />

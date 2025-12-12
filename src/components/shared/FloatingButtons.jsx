@@ -49,7 +49,7 @@ export default function FloatingButtons() {
 
         {/* Email */}
         <a
-          href="mailto:contact@salessyllabus.com"
+          href="mailto:3xgrowth.in@gmail.com"
           className="
             w-10 h-10 sm:w-12 sm:h-12
             rounded-lg 

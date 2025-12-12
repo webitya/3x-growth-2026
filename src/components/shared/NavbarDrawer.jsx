@@ -123,11 +123,11 @@ export default function NavbarDrawer({ isOpen, onClose, navLinks }) {
               +91 620 020 7379
             </a>
             <a
-              href="mailto:contact@3xgrowth.com"
+              href="mailto:3xgrowth.in@gmail.com"
               className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600 transition-colors group"
             >
               <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              contact@3xgrowth.com
+              3xgrowth.in@gmail.com
             </a>
           </div>
 
@@ -162,7 +162,7 @@ export default function NavbarDrawer({ isOpen, onClose, navLinks }) {
 
             {/* Secondary CTA */}
             <a
-              href="mailto:contact@3xgrowth.com"
+              href="mailto:3xgrowth.in@gmail.com"
               className="
                 group relative block w-full text-center 
                 px-6 py-3 rounded-lg font-semibold text-sm

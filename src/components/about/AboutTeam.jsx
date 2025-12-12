@@ -76,7 +76,7 @@ export default function AboutTeam() {
                                 <Linkedin className="w-4 h-4 text-blue-600 group-hover:text-white transition-colors" />
                             </a>
                             <a
-                                href="mailto:sandeep@3xgrowth.com"
+                                href="mailto:3xgrowth.in@gmail.com"
                                 className="group w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-200/50 flex items-center justify-center hover:bg-cyan-600 hover:border-cyan-600 transition-all duration-300"
                             >
                                 <Mail className="w-4 h-4 text-cyan-600 group-hover:text-white transition-colors" />

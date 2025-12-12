@@ -49,7 +49,7 @@ export default function ServicesCTA() {
             Book Free Call
           </a>
           <a
-            href="mailto:contact@3xgrowth.com"
+            href="mailto:3xgrowth.in@gmail.com"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/30 text-white font-bold text-sm hover:bg-white/20 transition-all duration-300"
           >
             <Mail className="w-4 h-4" />
@@ -63,7 +63,7 @@ export default function ServicesCTA() {
             📞 +91 6200207379
           </a>
           <span className="hidden sm:block">•</span>
-          <a href="mailto:contact@3xgrowth.com" className="hover:text-white transition-colors">
+          <a href="mailto:3xgrowth.in@gmail.com" className="hover:text-white transition-colors">
             📧 www.salessyllabus.com
           </a>
           <span className="hidden sm:block">•</span>

@@ -14,8 +14,8 @@ export default function ContactHero() {
         {
             icon: Mail,
             title: "Email Us",
-            value: "contact@3xgrowth.com",
-            href: "mailto:contact@3xgrowth.com",
+            value: "3xgrowth.in@gmail.com",
+            href: "mailto:3xgrowth.in@gmail.com",
             gradient: "from-cyan-500 to-indigo-500"
         },
         {

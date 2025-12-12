@@ -43,7 +43,7 @@ export default function BlogClientPage() {
             Insights for{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">
-                SME Founders
+                Founders
               </span>
               <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full"></div>
             </span>

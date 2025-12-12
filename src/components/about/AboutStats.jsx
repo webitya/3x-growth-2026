@@ -49,7 +49,7 @@ export default function AboutStats() {
             icon: Users,
             value: counts.clients,
             suffix: "+",
-            label: "SMEs Transformed",
+            label: "Companies Transformed",
             gradient: "from-blue-500 to-cyan-500",
             bg: "from-blue-500/10 to-cyan-500/10",
             progress: (counts.clients / targetValues.clients) * 100,
@@ -112,7 +112,7 @@ export default function AboutStats() {
                         </span>
                     </h2>
                     <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto">
-                        Real results from real clients - proven track record of transforming SME sales
+                        Real results from real clients - proven track record of transforming sales for companies
                     </p>
                 </div>
 

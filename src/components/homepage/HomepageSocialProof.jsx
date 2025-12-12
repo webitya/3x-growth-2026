@@ -49,7 +49,7 @@ export default function HomepageSocialProof() {
   ];
 
   const stats = [
-    { number: "50+", label: "SMEs Helped" },
+    { number: "50+", label: "Companies Helped" },
     { number: "220%", label: "Avg Revenue Growth" },
     { number: "3 Months", label: "To See Results" },
     { number: "100%", label: "Client Satisfaction" }

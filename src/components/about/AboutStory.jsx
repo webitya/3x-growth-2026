@@ -7,7 +7,7 @@ export default function AboutStory() {
     {
       year: "2016",
       title: "The Beginning",
-      description: "Started helping first SME clients fix broken sales processes",
+      description: "Started helping first clients fix broken sales processes",
       icon: Rocket,
       gradient: "from-orange-500 to-red-500",
       bg: "from-orange-100/50 to-red-100/50",
@@ -23,7 +23,7 @@ export default function AboutStory() {
     {
       year: "2021",
       title: "Scale Mode",
-      description: "Expanded to help 50+ SMEs across industries",
+      description: "Expanded to help 50+ companies across industries",
       icon: Award,
       gradient: "from-indigo-500 to-blue-500",
       bg: "from-indigo-100/50 to-blue-100/50",
@@ -52,7 +52,7 @@ export default function AboutStory() {
           <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2">
             Our <span className="bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent">Journey</span>
           </h2>
-          <p className="text-sm md:text-base text-slate-600">From startup to trusted partner for 50+ SMEs</p>
+          <p className="text-sm md:text-base text-slate-600">From startup to trusted partner for 50+ Companies</p>
         </div>
 
         {/* TIMELINE CARDS - Compact */}

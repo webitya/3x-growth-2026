@@ -1,50 +1,39 @@
 "use client";
 
-import { Target, Users, TrendingUp, BarChart3, ArrowRight, Check } from "lucide-react";
+import { Target, Users, TrendingUp, BarChart3, ArrowRight, Check, Search } from "lucide-react";
 
 export default function HomepageServices() {
   const services = [
     {
-      icon: Target,
-      title: "Sales Strategy",
-      description: "Build a clear, repeatable sales process that converts leads into customers consistently.",
+      icon: Search,
+      title: "Sales & Marketing Audit",
+      description: "Find out exactly why you're losing money. We analyze your leads, team, and process to give you a clear roadmap to fix it.",
       features: [
-        "ICP & persona definition",
-        "Lead qualification framework",
-        "Sales playbook creation"
+        "20-50 page audit report",
+        "Analysis of where deals die",
+        "90-day action plan"
       ],
       popular: false
     },
     {
-      icon: BarChart3,
-      title: "Pipeline Management",
-      description: "Implement systems for accurate forecasting and predictable revenue growth.",
+      icon: Target,
+      title: "Lead Gen & Qualification (BOT)",
+      description: "Build-Operate-Transfer. We build your complete lead engine, run it until it works, then transfer it to your team.",
       features: [
-        "CRM setup & optimization",
-        "Pipeline health tracking",
-        "Forecasting models"
+        "MQL & SQL system setup",
+        "Lead qualification framework",
+        "Full team training"
       ],
       popular: true
     },
     {
-      icon: TrendingUp,
-      title: "Sales Training",
-      description: "Equip your team with proven frameworks to close more deals, faster.",
-      features: [
-        "Consultative selling training",
-        "Objection handling",
-        "Negotiation tactics"
-      ],
-      popular: false
-    },
-    {
       icon: Users,
-      title: "Team Scaling",
-      description: "Hire, onboard, and scale your sales team without losing consistency.",
+      title: "Outsourced Sales Model",
+      description: "We take end-to-end responsibility. Our team generates and qualifies leads (SQLs) so you only speak to ready buyers.",
       features: [
-        "Hiring playbooks",
-        "Onboarding programs",
-        "Performance metrics"
+        "Fully managed sales team",
+        "Guaranteed SQL delivery",
+        "Operational transparency"
       ],
       popular: false
     }
@@ -93,7 +82,7 @@ export default function HomepageServices() {
         </div>
 
         {/* Services grid - Compact */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {services.map((service, idx) => {
             const Icon = service.icon;
 
@@ -142,7 +131,7 @@ export default function HomepageServices() {
 
                 {/* CTA */}
                 <a
-                  href="#contact"
+                  href="/services"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 hover:gap-3 transition-all"
                 >
                   Learn More
@@ -165,7 +154,7 @@ export default function HomepageServices() {
             Book a free audit call and we'll recommend the best approach for your business
           </p>
           <a
-            href="/contact"
+            href="https://calendly.com/salessyllabus"
             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 hover:scale-105 transition-all duration-300"
           >
             <BarChart3 className="w-4 h-4" />

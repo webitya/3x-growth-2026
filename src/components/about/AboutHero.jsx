@@ -43,7 +43,7 @@ export default function AboutHero() {
             {/* Compact Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50/70 backdrop-blur-sm border border-blue-200/50">
               <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span className="text-xs font-bold text-blue-700">Since 2016 • 50+ SMEs Transformed</span>
+              <span className="text-xs font-bold text-blue-700">Since 2016 • 50+ Companies Transformed</span>
             </div>
 
             {/* Headline with Typewriter - Compact */}
@@ -58,13 +58,13 @@ export default function AboutHero() {
             <p className="text-sm md:text-base text-slate-600 leading-relaxed max-w-xl">
               Proven sales systems that transform chaos into{" "}
               <span className="font-bold text-blue-600">220% average growth</span>.
-              No theory, just actionable playbooks built for SMEs.
+              No theory, just actionable playbooks built for companies.
             </p>
 
             {/* Stats Grid - Compact */}
             <div className="grid grid-cols-3 gap-3">
               {[
-                { icon: Users, value: "50+", label: "SMEs", color: "from-blue-500 to-cyan-500" },
+                { icon: Users, value: "50+", label: "Companies", color: "from-blue-500 to-cyan-500" },
                 { icon: TrendingUp, value: "220%", label: "Avg Growth", color: "from-cyan-500 to-blue-500" },
                 { icon: Zap, value: "90 Days", label: "Results", color: "from-indigo-500 to-blue-500" }
               ].map((stat, idx) => {

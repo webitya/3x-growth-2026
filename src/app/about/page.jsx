@@ -5,8 +5,8 @@ import AboutStats from "@/components/about/AboutStats";
 import AboutValues from "@/components/about/AboutValues";
 
 export const metadata = {
-  title: "About Us - 3x Growth | Transforming SME Sales Since 2016",
-  description: "Meet the team behind 3x Growth. We've helped 50+ SME founders achieve 220% average revenue growth through proven sales systems.",
+  title: "About Us - 3x Growth | Transforming Sales Since 2016",
+  description: "Meet the team behind 3x Growth. We've helped 50+ founders achieve 220% average revenue growth through proven sales systems.",
 };
 
 export default function AboutPage() {

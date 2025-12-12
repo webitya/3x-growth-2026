@@ -33,7 +33,7 @@ export async function POST(request) {
           <div style="background-color: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
               <h1 style="color: #0066CC; margin: 0; font-size: 28px;">3x Growth Consulting</h1>
-              <p style="color: #666; margin: 5px 0 0 0;">Sales Systems for SME Founders</p>
+              <p style="color: #666; margin: 5px 0 0 0;">Sales Systems for Founders</p>
             </div>
             
             <h2 style="color: #1a1a1a; font-size: 20px; margin-bottom: 20px;">Hi ${name},</h2>

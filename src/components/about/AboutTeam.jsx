@@ -33,7 +33,7 @@ export default function AboutTeam() {
                         </span>
                     </h2>
                     <p className="text-sm text-slate-600 max-w-2xl mx-auto">
-                        Leading the transformation of SME sales with proven systems
+                        Leading the transformation of sales for companies with proven systems
                     </p>
                 </div>
 
@@ -130,7 +130,7 @@ export default function AboutTeam() {
                         {/* Bio - Compact */}
                         <div className="space-y-3">
                             <p className="text-sm text-slate-700 leading-relaxed">
-                                With over <span className="font-bold text-blue-600">8+ years of experience</span> in sales transformation, Sandeep has helped <span className="font-bold text-cyan-600">50+ SME founders</span> achieve predictable revenue growth.
+                                With over <span className="font-bold text-blue-600">8+ years of experience</span> in sales transformation, Sandeep has helped <span className="font-bold text-cyan-600">50+ founders</span> achieve predictable revenue growth.
                             </p>
                             <p className="text-sm text-slate-700 leading-relaxed">
                                 His proven sales systems have generated an average of <span className="font-bold text-blue-600">220% revenue growth</span> for clients, turning chaotic sales processes into reliable, scalable machines.
@@ -147,7 +147,7 @@ export default function AboutTeam() {
                                     "Team Training",
                                     "Revenue Growth",
                                     "Process Optimization",
-                                    "SME Consulting"
+                                    "Business Growth"
                                 ].map((skill, idx) => (
                                     <span
                                         key={idx}

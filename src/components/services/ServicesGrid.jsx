@@ -8,9 +8,9 @@ export default function ServicesGrid() {
       id: "sales-audit",
       icon: Search,
       title: "Sales and Marketing Audit",
-      subtitle: "Find Out Exactly What's Wrong",
-      problem: "Before fixing anything, we need to understand what's broken. You might be targeting the wrong people, losing deals at specific stages, or missing competitor moves.",
-      solution: "Our audit shows you exactly where you're losing money and provides a clear roadmap to fix it.",
+      subtitle: "Audit (Find Out Exactly What's Wrong)",
+      problem: "Before fixing anything, we need to understand what's broken. Our audit shows you exactly where you're losing money.",
+      solution: "You'll know exactly what's broken, why it's broken, and what to fix first.",
       analyzeAreas: [
         { title: "Who should you sell to?", desc: "Are you targeting the right customers?" },
         { title: "Where do leads come from?", desc: "Which channels work, which don't?" },
@@ -20,13 +20,13 @@ export default function ServicesGrid() {
         { title: "What are competitors doing?", desc: "What are you missing?" }
       ],
       deliverables: [
-        { icon: "📄", title: "20-50 Page Report", desc: "Clear findings and data" },
-        { icon: "📋", title: "90-Day Action Plan", desc: "With priorities" },
-        { icon: "🛣️", title: "Clear Roadmap", desc: "What to fix first" }
+        { icon: "📄", title: "20-50 page report", desc: "with clear findings" },
+        { icon: "📋", title: "90-day action plan", desc: "with priorities" },
+        { icon: "🛣️", title: "Clear roadmap", desc: "of what to fix first" }
       ],
       timeline: "2-3 weeks",
       investment: "Custom Quote",
-      result: "You'll know exactly what's broken, why it's broken, and what to fix first.",
+      result: "Simple Result: You'll know exactly what's broken, why it's broken, and what to fix first.",
       bestFor: "Companies unclear on why growth has stalled or those planning to scale.",
       gradient: "from-orange-500 to-red-500",
       bg: "from-orange-50/80 to-red-50/80"
@@ -37,25 +37,28 @@ export default function ServicesGrid() {
       title: "Lead Gen & Qualification",
       subtitle: "BOT Model (Build-Operate-Transfer)",
       problem: "Most sales teams waste time chasing deals that will never close. You need a predictable engine, not just random actions.",
-      solution: "We build your complete B2B lead generation & qualification engine, operate it until it runs smoothly, and then transfer it to your team.",
+      solution: "We set up your complete B2B lead generation & qualification engine—from generating sales enquiries to delivering high-intent Sales Qualified Leads (SQLs). Built inside your organization using a BOT model: Build, Operate, Transfer.",
       sqlCriteria: ["Approved budget", "Decision-making authority", "Clear need for your solution", "Defined buying timeline"],
       includes: [
         {
-          title: "MQL Setup (Enquiries)",
-          items: ["Inbound & outbound workflows", "Criteria for enquiry-level MQLs", "Tools, automation & tracking"]
+          title: "A. MQL Setup — Generating Consistent Sales Enquiries",
+          desc: "We establish the full marketing-qualified lead engine to ensure a predictable flow of sales enquiries.",
+          items: ["Inbound & outbound lead generation workflows", "Criteria for identifying enquiry-level MQLs", "Tools, automation, and tracking systems"]
         },
         {
-          title: "SQL Setup (Qualification)",
-          items: ["Qualification checklist", "High-impact questions", "Cost–value templates", "Opportunity scoring/grading"]
+          title: "B. SQL Setup — Lead Qualification Framework",
+          desc: "Ensure your team speaks only to real buyers. Can be taken as a standalone service.",
+          items: ["Simple qualification checklist for your team", "High-impact questions revealing buying intent", "Cost–value templates to justify pricing", "A scoring system to grade each opportunity", "Training for your entire sales team"]
         },
         {
-          title: "Training & Handover",
-          items: ["Team training on the system", "Operational transparency", "Full transfer of assets"]
+          title: "Overall Outcome",
+          items: ["Complete lead generation engine", "Produces both MQLs and high-intent SQLs", "Sales team focuses only on deals with revenue potential"]
         }
       ],
+      note: "Note: This qualification framework is built into the lead generation system—but can also be taken as an independent standalone service.",
       timeline: "3-6 months",
       investment: "Custom Quote",
-      result: "A complete engine producing MQLs and high-intent SQLs, ensuring your team only speaks to real buyers.",
+      result: "You get a complete lead generation engine—ensuring your sales team spends time only on deals with real revenue potential.",
       bestFor: "Companies wanting to build an internal asset for long-term growth.",
       gradient: "from-blue-500 to-cyan-500",
       bg: "from-blue-50/80 to-cyan-50/80"
@@ -63,27 +66,27 @@ export default function ServicesGrid() {
     {
       id: "outsourced-model",
       icon: Users,
-      title: "Outsourced Sales Model",
+      title: "Outsourced Model",
       subtitle: "End-to-End Responsibility",
-      problem: "Hiring, training, and managing a sales team is difficult, expensive, and time-consuming. You want results without the headache.",
-      solution: "We take full responsibility for delivering Sales Qualified Leads (SQLs). We build and manage the entire operation from our premises.",
+      problem: "In this model, we take end-to-end responsibility for delivering Sales Qualified Leads (SQLs) to your organization.",
+      solution: "We build and manage the entire lead generation operation from our premises, ensuring you receive not just sales enquiries but fully verified, high-intent SQLs. Our team handles recruitment, onboarding, training, and project management of all resources.",
       includes: [
         {
           title: "Complete Operation",
-          items: ["Recruitment & onboarding", "Training & management", "Project management"]
+          items: ["Recruitment & onboarding", "Training & management", "Project management of all resources"]
         },
         {
-          title: "Our Deliverables",
-          items: ["Generate high-quality enquiries", "Qualify each into specific SQLs", "Work with your team to convert"]
+          title: "Our Team Will:",
+          items: ["1. Generate high-quality sales enquiries", "2. Qualify each enquiry into a Sales Qualified Lead (SQL)", "3. Work closely with your sales team to support conversions"]
         },
         {
           title: "Transparency",
-          items: ["Timely performance reports", "Operational transparency", "Seamless communication"]
+          items: ["Timely performance reports", "Complete operational transparency", "Seamless communication"]
         }
       ],
       timeline: "Ongoing",
       investment: "Custom Quote",
-      result: "We act as your extended team, delivering fully verified, high-intent SQLs directly to your pipeline.",
+      result: "Our resources work as an extension of your sales team, ensuring alignment, seamless communication, and consistent results.",
       bestFor: "Companies who want results (SQLs) and prefer to outsource the operational heavy lifting.",
       gradient: "from-purple-500 to-indigo-500",
       bg: "from-purple-50/80 to-indigo-50/80"
@@ -167,6 +170,9 @@ export default function ServicesGrid() {
                         {(service.includes || service.supportAreas || service.analyzeAreas)?.map((item, i) => (
                           <div key={i} className="p-3 rounded-lg bg-slate-50/80 border border-slate-200/50">
                             <div className="text-xs font-bold text-blue-700 mb-2">{item.title}</div>
+                            {item.desc && (
+                              <p className="text-xs text-slate-600 mb-2 italic">{item.desc}</p>
+                            )}
                             {item.items ? (
                               <ul className="space-y-1">
                                 {item.items.map((subitem, j) => (
@@ -182,6 +188,14 @@ export default function ServicesGrid() {
                           </div>
                         ))}
                       </div>
+                      {/* Note for BOT Model */}
+                      {service.note && (
+                        <div className="mt-4 p-3 rounded-lg bg-amber-50 border border-amber-200/60">
+                          <p className="text-xs font-semibold text-amber-800 italic">
+                            {service.note}
+                          </p>
+                        </div>
+                      )}
                     </div>
 
                     {/* Plans (Service 3 only) */}

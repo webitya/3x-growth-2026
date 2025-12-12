@@ -5,40 +5,31 @@ import { Target, Users, TrendingUp, Search } from "lucide-react";
 export default function ServicesNav() {
     const services = [
         {
-            id: "mql-setup",
+            id: "sales-audit",
+            icon: Search,
+            title: "Sales Audit",
+            subtitle: "Find The Gaps",
+            description: "Deep dive analysis of your process, leads, and team.",
+            gradient: "from-orange-500 to-red-500",
+            bg: "from-orange-50 to-red-50"
+        },
+        {
+            id: "bot-model",
             icon: Target,
-            title: "Get Quality Leads",
-            subtitle: "MQL Setup",
-            description: "No leads or wrong leads? We build your lead generation system.",
+            title: "Lead Gen & Qualification",
+            subtitle: "BOT Model",
+            description: "We build and operate your lead engine, then transfer it.",
             gradient: "from-blue-500 to-cyan-500",
             bg: "from-blue-50 to-cyan-50"
         },
         {
-            id: "sql-setup",
+            id: "outsourced-model",
             icon: Users,
-            title: "Stop Dead Deals",
-            subtitle: "SQL Setup",
-            description: "Busy but nothing closes? Learn to qualify properly.",
-            gradient: "from-indigo-500 to-blue-500",
-            bg: "from-indigo-50 to-blue-50"
-        },
-        {
-            id: "monthly-support",
-            icon: TrendingUp,
-            title: "Monthly Support",
-            subtitle: "Ongoing Partnership",
-            description: "Need sales leadership? Part-time VP of Sales support.",
+            title: "Outsourced Sales",
+            subtitle: "End-to-End",
+            description: "We take full responsibility for generating and qualifying leads.",
             gradient: "from-purple-500 to-indigo-500",
             bg: "from-purple-50 to-indigo-50"
-        },
-        {
-            id: "sales-audit",
-            icon: Search,
-            title: "Sales Audit",
-            subtitle: "Deep Dive",
-            description: "Know something's wrong? Get a complete diagnostic.",
-            gradient: "from-orange-500 to-red-500",
-            bg: "from-orange-50 to-red-50"
         }
     ];
 
@@ -71,7 +62,7 @@ export default function ServicesNav() {
                 </div>
 
                 {/* Service Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {services.map((service, idx) => {
                         const Icon = service.icon;
 

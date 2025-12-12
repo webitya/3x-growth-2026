@@ -39,7 +39,7 @@ export default function HomepageProblem() {
             You're Not Alone —{" "}
             <span className="relative inline-block">
               <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
-                Most SMEs Face These
+                Most Companies Face These
               </span>
               <span className="absolute -inset-1 bg-gradient-to-r from-blue-600/10 to-blue-800/10 blur-xl -z-10"></span>
             </span>

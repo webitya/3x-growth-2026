@@ -339,7 +339,7 @@ export default function HomepageHero() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-xs font-medium text-slate-600">Trusted by <span className="text-blue-600 font-bold">50+ SMEs</span></p>
+                <p className="text-xs font-medium text-slate-600">Trusted by <span className="text-blue-600 font-bold">50+ Companies</span></p>
               </div>
             </div>
           </div>

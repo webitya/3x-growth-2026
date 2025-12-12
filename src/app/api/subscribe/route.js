@@ -45,7 +45,7 @@ export async function POST(request) {
                   <strong>Weekly Sales Insights</strong> - Actionable strategies to grow your revenue
                 </li>
                 <li style="margin-bottom: 10px; font-size: 14px;">
-                  <strong>Case Studies</strong> - Real results from SME founders like you
+                  <strong>Case Studies</strong> - Real results from founders like you
                 </li>
                 <li style="margin-bottom: 10px; font-size: 14px;">
                   <strong>Growth Tips</strong> - Proven tactics to fix your sales system

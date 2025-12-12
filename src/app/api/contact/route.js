@@ -2,33 +2,33 @@ import nodemailer from "nodemailer";
 
 // Create a transporter using Gmail SMTP
 const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.SMTP_EMAIL,
-        pass: process.env.SMTP_PASSWORD,
-    },
+  service: "gmail",
+  auth: {
+    user: process.env.SMTP_EMAIL,
+    pass: process.env.SMTP_PASSWORD,
+  },
 });
 
 export async function POST(request) {
-    try {
-        const { name, email, phone, company, message } = await request.json();
+  try {
+    const { name, email, phone, company, message } = await request.json();
 
-        // Validate required fields
-        if (!name || !email || !message) {
-            return Response.json({ error: "Missing required fields" }, { status: 400 });
-        }
+    // Validate required fields
+    if (!name || !email || !message) {
+      return Response.json({ error: "Missing required fields" }, { status: 400 });
+    }
 
-        // Email to the client
-        const clientMailOptions = {
-            from: process.env.SMTP_EMAIL,
-            to: email,
-            subject: "We Received Your Message - 3x Growth Consulting",
-            html: `
+    // Email to the client
+    const clientMailOptions = {
+      from: process.env.SMTP_EMAIL,
+      to: email,
+      subject: "We Received Your Message - 3x Growth Consulting",
+      html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
           <div style="background-color: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="text-align: center; margin-bottom: 30px;">
               <h1 style="color: #0066CC; margin: 0; font-size: 28px;">3x Growth Consulting</h1>
-              <p style="color: #666; margin: 5px 0 0 0;">Sales Systems for SME Founders</p>
+              <p style="color: #666; margin: 5px 0 0 0;">Sales Systems for Founders</p>
             </div>
             
             <h2 style="color: #1a1a1a; font-size: 20px; margin-bottom: 20px;">Hi ${name},</h2>
@@ -65,14 +65,14 @@ export async function POST(request) {
           </p>
         </div>
       `,
-        };
+    };
 
-        // Email to the admin
-        const adminMailOptions = {
-            from: process.env.SMTP_EMAIL,
-            to: process.env.SMTP_EMAIL,
-            subject: `New Contact Form Submission from ${name}`,
-            html: `
+    // Email to the admin
+    const adminMailOptions = {
+      from: process.env.SMTP_EMAIL,
+      to: process.env.SMTP_EMAIL,
+      subject: `New Contact Form Submission from ${name}`,
+      html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
           <div style="background-color: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <h2 style="color: #0066CC; font-size: 22px; margin-bottom: 25px;">New Contact Form Submission</h2>
@@ -108,26 +108,26 @@ export async function POST(request) {
           </div>
         </div>
       `,
-        };
+    };
 
-        // Send emails
-        await Promise.all([
-            transporter.sendMail(clientMailOptions),
-            transporter.sendMail(adminMailOptions),
-        ]);
+    // Send emails
+    await Promise.all([
+      transporter.sendMail(clientMailOptions),
+      transporter.sendMail(adminMailOptions),
+    ]);
 
-        return Response.json(
-            {
-                success: true,
-                message: "Your message has been sent successfully. We will get back to you soon!",
-            },
-            { status: 200 }
-        );
-    } catch (error) {
-        console.error("Contact form error:", error);
-        return Response.json(
-            { error: "Failed to send message. Please try again." },
-            { status: 500 }
-        );
-    }
+    return Response.json(
+      {
+        success: true,
+        message: "Your message has been sent successfully. We will get back to you soon!",
+      },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Contact form error:", error);
+    return Response.json(
+      { error: "Failed to send message. Please try again." },
+      { status: 500 }
+    );
+  }
 }

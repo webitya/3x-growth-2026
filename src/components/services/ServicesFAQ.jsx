@@ -21,7 +21,7 @@ export default function ServicesFAQ() {
     },
     {
       question: "Do we need expensive CRM software?",
-      answer: "No. We work with whatever you have. Most SMEs can start with simple tools."
+      answer: "No. We work with whatever you have. Most companies can start with simple tools."
     },
     {
       question: "What industries do you work with?",

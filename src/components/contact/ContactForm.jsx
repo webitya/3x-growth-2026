@@ -95,7 +95,7 @@ export default function ContactForm() {
                 },
                 {
                   title: "220% Avg Growth",
-                  description: "Proven results with 50+ SMEs"
+                  description: "Proven results with 50+ Companies"
                 },
                 {
                   title: "Fast Implementation",

@@ -4,14 +4,13 @@ import { Sparkles, ArrowRight, Target, Users, TrendingUp, Search } from "lucide-
 
 export default function ServicesHero() {
   const highlights = [
-    { icon: Target, text: "MQL Setup", gradient: "from-blue-500 to-cyan-500" },
-    { icon: Users, text: "SQL Setup", gradient: "from-indigo-500 to-blue-500" },
-    { icon: TrendingUp, text: "Monthly Support", gradient: "from-purple-500 to-indigo-500" },
-    { icon: Search, text: "Sales Audit", gradient: "from-orange-500 to-red-500" }
+    { icon: Search, text: "Sales Audit", gradient: "from-orange-500 to-red-500" },
+    { icon: Target, text: "BOT Model", gradient: "from-blue-500 to-cyan-500" },
+    { icon: Users, text: "Outsourced Sales", gradient: "from-purple-500 to-indigo-500" }
   ];
 
   const scrollToService = (idx) => {
-    const serviceIds = ["mql-setup", "sql-setup", "monthly-support", "sales-audit"];
+    const serviceIds = ["sales-audit", "bot-model", "outsourced-model"];
     const element = document.getElementById(serviceIds[idx]);
     if (element) {
       const offset = 100;
@@ -92,14 +91,14 @@ export default function ServicesHero() {
         {/* Enhanced CTA */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="#consultation"
+            href="https://calendly.com/salessyllabus"
             className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-base shadow-xl shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300"
           >
             Not Sure? Get Free Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#mql-setup"
+            href="#sales-audit"
             className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-50/80 backdrop-blur-sm border border-blue-200/50 text-blue-700 font-bold text-base hover:bg-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300"
           >
             Explore Services Below

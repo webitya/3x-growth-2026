@@ -33,7 +33,7 @@ export default function AboutWhoWeHelp() {
             Who We Help
           </h2>
           <p className="text-sm md:text-base text-slate-600 mt-2">
-            We work with SME founders and business owners who are:
+            We work with founders and business owners who are:
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function AboutWhoWeHelp() {
           shadow-sm
         ">
           <p className="text-sm md:text-base text-slate-800 font-medium leading-relaxed">
-            We are not for everyone. If you’re looking for quick tips or magic fixes, we are not the right fit.  
+            We are not for everyone. If you’re looking for quick tips or magic fixes, we are not the right fit.
             But if youa are ready to build a real sales engine, we’d love to talk.
           </p>
         </div>

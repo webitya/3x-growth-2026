@@ -14,8 +14,8 @@ export const blogPosts = [
     image: "/sales_metrics_dashboard_1764965932071.png",
     content: `
 # How to Build a Predictable Sales Pipeline in 90 Days
-
-Most SME founders struggle with revenue forecasting. One month you close 5 deals, the next month you're chasing leads that go cold. Sound familiar?
+ 
+ Most founders struggle with revenue forecasting. One month you close 5 deals, the next month you're chasing leads that go cold. Sound familiar?
 
 The truth is: **predictable revenue isn't luck. It's a system.**
 
@@ -94,7 +94,7 @@ Fix gaps → improve → scale
 
 ## The Bottom Line
 
-Predictable revenue isn't complicated. Most SMEs simply never build the system.
+Predictable revenue isn't complicated. Most companies simply never build the system.
 
 If you're tired of guessing, it's time to build the system.
 
@@ -204,7 +204,7 @@ If you want to implement this in your team, let’s talk.
   {
     id: 3,
     slug: "track-sales-metrics-that-matter",
-    title: "The Only 5 Sales Metrics SME Founders Should Track",
+    title: "The Only 5 Sales Metrics Founders Should Track",
     excerpt:
       "Stop drowning in data. Focus on these 5 critical metrics to understand and grow your sales.",
     author: "Sandeep Gupta",
@@ -213,9 +213,9 @@ If you want to implement this in your team, let’s talk.
     readTime: "7 min read",
     image: "/sales_metrics_dashboard_1764965932071.png",
     content: `
-# The Only 5 Sales Metrics SME Founders Should Track
+# The Only 5 Sales Metrics Founders Should Track
 
-Most SME founders track too many metrics or the wrong metrics entirely.
+Most founders track too many metrics or the wrong metrics entirely.
 
 Your CRM has 50+ reports. Your sales team talks about "activity." But revenue isn't growing.
 
@@ -254,7 +254,7 @@ What percentage of qualified opportunities actually close?
 **Formula:** Deals Won ÷ Total Opportunities
 
 **What good looks like:**
-- 20–30% is standard for most SMEs
+- 20–30% is standard for most companies
 - Below 15% → qualification problem
 - Above 40% → you're not taking enough risks
 
@@ -499,7 +499,7 @@ Ready to build a high-performing sales team? Book a call.
 
 "We need more leads."
 
-Every SME founder says this. But most lead gen strategies are expensive, unscalable, or just don't work.
+Every founder says this. But most lead gen strategies are expensive, unscalable, or just don't work.
 
 Here's the truth: **you don't need a huge budget to generate qualified leads.**
 
@@ -522,7 +522,7 @@ Let's break it down.
 
 ### 1. Optimize Your Website for Conversions
 
-Most SME websites don't generate leads. They just exist.
+Most company websites don't generate leads. They just exist.
 
 **Quick wins:**
 - Add a clear CTA above the fold
@@ -673,7 +673,7 @@ Need help building a lead gen system for your business? Let's talk.
 
 "We need a CRM."
 
-You're right. But most SMEs pick the wrong one.
+You're right. But most companies pick the wrong one.
 
 They either:
 - Overbuy (enterprise CRM for a 5-person team)
@@ -810,7 +810,7 @@ Your team needs ongoing support, not just a one-time training.
 | CRM | Best For | Starting Price | Ease of Use |
 |-----|----------|----------------|-------------|
 | Pipedrive | Small teams | ₹1,500/user/mo | ⭐⭐⭐⭐⭐ |
-| HubSpot | Growing SMEs | Free–₹4,500/mo | ⭐⭐⭐⭐ |
+| HubSpot | Growing Companies | Free–₹4,500/mo | ⭐⭐⭐⭐ |
 | Zoho CRM | Budget-conscious | ₹800/user/mo | ⭐⭐⭐ |
 | Salesforce | Enterprise | ₹2,500/user/mo | ⭐⭐ |
 
@@ -863,7 +863,7 @@ Your profile is your first impression.
 
 **Example headline:**
 ❌ "Sales Manager at XYZ Corp"  
-✅ "Helping SME Founders Build Predictable Sales Systems | 50+ Clients"
+✅ "Helping Founders Build Predictable Sales Systems | 50+ Clients"
 
 ### Step 2: Identify Your ICP
 
@@ -2029,7 +2029,7 @@ Need help improving your close rate? Let's talk.
 
 You're leaving money on the table.
 
-Most SMEs underprice their products because:
+Most companies underprice their products because:
 - They're afraid to lose customers
 - They don't understand their value
 - They're competing on price instead of value
@@ -2184,7 +2184,7 @@ Offer:
 
 ## When to Raise Prices
 
-Most SMEs wait too long to raise prices.
+Most companies wait too long to raise prices.
 
 **Raise prices if:**
 ✅ You're consistently closing >50% of deals  

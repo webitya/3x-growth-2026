@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 const dmMono = DM_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "3x Growth Consulting - Sales Systems for SME Founders",
+  title: "3x Growth Consulting - Sales Systems for Founders",
   description:
-    "Build predictable sales systems for your SME business. 3x Growth helps you fix broken sales processes and scale revenue consistently.",
-  keywords: "sales consulting, SME growth, sales systems, revenue growth, B2B sales",
+    "Build predictable sales systems for your company. 3x Growth helps you fix broken sales processes and scale revenue consistently.",
+  keywords: "sales consulting, company growth, sales systems, revenue growth, B2B sales",
   ogTitle: "3x Growth Consulting",
   ogDescription:
     "Stop guessing when your next sale will come. We fix broken sales systems so you can grow predictably.",

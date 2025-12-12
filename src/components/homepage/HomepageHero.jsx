@@ -350,7 +350,7 @@ export default function HomepageHero() {
             <div className="absolute -inset-10 bg-gradient-to-r from-blue-400/10 to-blue-500/10 rounded-full blur-3xl -z-10 animate-pulse-slow" />
             <div className="absolute -inset-12 bg-gradient-to-r from-blue-500/5 to-cyan-400/5 rounded-full blur-[100px] -z-20 animate-pulse-slower" />
 
-            <div className="relative z-10">
+            <div className="relative z-20">
               <EnquiryForm />
             </div>
           </div>

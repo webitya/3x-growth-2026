@@ -4,10 +4,9 @@ import { useState } from "react";
 import { Send, CheckCircle2, ChevronDown } from "lucide-react";
 
 const services = [
-    "Sales Strategy",
-    "Lead Generation",
-    "Sales Training",
-    "Consulting"
+    "Sales & Marketing Audit",
+    "Lead Gen & Qualification (BOT)",
+    "Outsourced Sales Model"
 ];
 
 export default function EnquiryForm() {

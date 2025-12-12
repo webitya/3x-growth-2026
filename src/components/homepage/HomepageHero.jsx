@@ -244,7 +244,7 @@ export default function HomepageHero() {
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-500"></span>
               </span>
               <Sparkles className="w-2.5 h-2.5 text-blue-600 animate-pulse" />
-              <span className="text-xs font-bold text-blue-700 tracking-wide relative">Q1 2026 Partners</span>
+              <span className="text-xs font-bold text-blue-700 tracking-wide relative">B2B Marketing Company</span>
               <Boxes className="w-2.5 h-2.5 text-blue-600 animate-spin-slow" />
             </div>
 
